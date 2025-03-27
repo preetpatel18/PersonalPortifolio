@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
-
+import project from './Projects.png';
+import languages from './Languages.png';
 function App() {
   // State management
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -30,7 +31,6 @@ function App() {
       }
     };
   };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -134,23 +134,11 @@ function App() {
         </nav>
 
         {/* Main Content */}
-        <main className="content">
-          <a href="aboutme.html" className="content-link">
-            <div className="box">
-              <div className="image-container" aria-hidden="true"></div>
-              <p className="btext rubik">
-                PREET PATEL
-                <span className="social-icons">
-                  <i className="bx bxl-instagram"></i>
-                  <i className="bx bxl-youtube"></i>
-                  <i className="bx bxl-tiktok"></i>
-                </span>
-              </p>
-            </div>
-          </a>
-          
+        <main className="content">          
           <div className="box">
-            <div className="image-container" aria-hidden="true"></div>
+            <div className="image-container" aria-hidden="true">
+              <img src={project} alt="Pic"></img>
+            </div>
             <p className="btext rubik">
               PROJECTS
               <i className="bx bx-book"></i>
@@ -158,7 +146,9 @@ function App() {
           </div>
           
           <div className="box">
-            <div className="image-container" aria-hidden="true"></div>
+            <div className="image-container" aria-hidden="true">
+            <img src={languages} alt="Pic"></img>
+            </div>
             <p className="btext rubik">
               Languages
               <i className="bx bx-code"></i>

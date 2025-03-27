@@ -18,8 +18,14 @@ ul, ol {
   --border-color: #212123;
   --text-color: #ffffff;
   --hover-text-color: tomato;
-  --whitebackground-color: rgba(255, 255, 255, 0.179);
-  --whitebordershadow-color: 0 0 10px rgba(0, 0, 0, 0.1);
+  --whitebackground-color: rgba(255, 255, 255, 0.134);
+  --whitebordershadow-color: 0 0 10px rgba(255, 255, 255, 0.3);
+  --lightshadow-color: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+  --hover-background-color: #1e1e21;  /* Slightly lighter than base */
+  --hover-border-color: #3a3a3d;      /* Noticeably lighter border */
+  --hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Lifting shadow */
 }
 
 /* Base Styles */
@@ -166,6 +172,8 @@ header {
 .bx-menu, .bx-x {
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--text-color);
+  background-color: #161618;
 }
 
 .disabled{
@@ -183,7 +191,7 @@ header {
     display: block;
   }
   .disabled{
-    display:block;
+    display: block;
   }
   
   .nav-links {
@@ -241,10 +249,6 @@ header {
   .links-sub-menu.open {
     max-height: 500px;
   }
-  
-  .links-arrow.open {
-    transform: rotate(180deg);
-  }
 }
 
 /* Content Styles */
@@ -259,8 +263,10 @@ header {
 
 .box {
   width: 300px;
-  background-color: var(--whitebackground-color);
-  box-shadow: var(--whitebordershadow-color);
+  background-color: var(--hover-background-color, #1e1e21);
+  border-color: var(--hover-border-color, #3a3a3d);
+  box-shadow: var(--hover-box-shadow, 0 4px 8px rgba(0, 0, 0, 0.3));
+  color: var(--text-color);
   margin: 10px;
   padding: 20px;
   display: flex;
@@ -272,7 +278,7 @@ header {
 }
 
 .box:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .image-container {
@@ -281,8 +287,12 @@ header {
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 15px;
+  border: 1px var(--border-color) solid;
+  box-shadow: var(--lightshadow-color-color);
 }
-
+.content a{
+  text-decoration: none;
+}
 .btext {
   width: 100%;
   display: flex;
@@ -323,11 +333,6 @@ header {
 @media (max-width: 600px) {
   .content {
     padding: 100px 20px 20px;
-  }
-  
-  .box {
-    width: 100%;
-    max-width: 350px;
   }
   
   .foot ul {
