@@ -364,6 +364,8 @@ header {
   height: auto;
   border-radius: 10px;
   object-fit: cover; /* Ensures image covers space without distortion */
+  box-shadow:var(--lightshadow-color);
+  border: 1px var(--border-color) solid;
 }
 
 /* Stack vertically on smaller screens (e.g., mobile) */
@@ -389,6 +391,7 @@ header {
   color: black;
   border: none;
   padding: 8px 15px;
+  margin-left: 10px;
   border-radius: 6px;
   font-size: 15px;
   font-weight: 600;
