@@ -49,7 +49,7 @@ header {
 
 /* Navigation Bar */
 .navbar {
-  background-color: var(--background-color);
+  background-color: var(--hover-background-color);
   border: 1px solid var(--border-color);
   width: 90vw;
   max-width: 1250px;
@@ -254,7 +254,6 @@ header {
 /* Content Styles */
 .content {
   width: 100%;
-  padding: 120px 40px 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -305,6 +304,105 @@ header {
   font-size: 1.5rem;
 }
 
+
+.profile-card {
+  background-color: var(--hover-background-color);
+  border-radius: 25px;
+  box-shadow:var(--lightshadow-color);
+  border: 1px var(--border-color) solid;
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.profile-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+.front{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 120px 40px 40px;
+}
+
+.profile-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+}
+
+/* Description takes 60-70% of space, image takes 30-40% on large screens */
+.profile-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #b2b2b2;
+  flex: 1 1 60%; /* Grow, shrink, start at 60% width */
+  min-width: 300px; /* Minimum width before wrapping */
+}
+
+/* Image styling */
+.startup {
+  flex: 0 0 30%; /* Don't grow or shrink, start at 30% width */
+  max-width: 25%;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures image covers space without distortion */
+}
+
+/* Stack vertically on smaller screens (e.g., mobile) */
+@media (max-width: 950px) {
+  .profile-filter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-description,
+  .startup {
+    flex: 1 1 100%; /* Take full width */
+    max-width: 100%;
+  }
+  .profile-card .contact-btn{
+    display: none;
+  }
+}
+
+.contact-btn {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(100, 108, 255, 0.2);
+}
+
+.contact-btn:hover {
+  background-color: #d92003;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(185, 73, 86, 0.3);
+}
 /* Footer Styles */
 .footer {
   background-color: var(--border-color);
@@ -332,7 +430,7 @@ header {
 
 @media (max-width: 600px) {
   .content {
-    padding: 100px 20px 20px;
+    padding: 20px 20px 20px;
   }
   
   .foot ul {
