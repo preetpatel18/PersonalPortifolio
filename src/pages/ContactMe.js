@@ -5,31 +5,31 @@ function ContactMe(){
         <div>
             <Navigation />
             <main className="front">   
-                <div class="contact-card">
-                    <div class="contact-info">
+                <div className="contact-card">
+                    <div className="contact-info">
                         <h1>Let's Connect</h1>
-                        <p class="subtitle">
+                        <p className="subtitle">
                             Have a project in mind or just want to say hello?  
                             Reach out—I’d love to hear from you!
                         </p>
 
-                        <div class="contact-details">
-                            <div class="detail-item">
-                                <div class="detail-text">
+                        <div className="contact-details">
+                            <div className="detail-item">
+                                <div className="detail-text">
                                     <h3>Email Me</h3>
                                     <p>preetpatel1862@gmail.com</p>
                                 </div>
                             </div>
 
-                            <div class="detail-item">
-                                <div class="detail-text">
+                            <div className="detail-item">
+                                <div className="detail-text">
                                     <h3>Discord Handle</h3>
                                     <p>@mrxleaderz</p>
                                 </div>
                             </div>
 
-                            <div class="detail-item">
-                                <div class="detail-text">
+                            <div className="detail-item">
+                                <div className="detail-text">
                                     <h3>Based In</h3>
                                     <p>NJ, USA</p>
                                 </div>
@@ -37,29 +37,29 @@ function ContactMe(){
                         </div>
                     </div>
 
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" class="form-input" placeholder=" " required/>
-                            <label for="name" class="form-label">Your Name</label>
+                    <form className="contact-form" action="#" method="POST">
+                        <div className="form-group">
+                            <input type="text" id="name" className="form-input" placeholder=" " required/>
+                            <label for="name" className="form-label">Your Name</label>
                         </div>
 
-                        <div class="form-group">
-                            <input type="email" id="email" class="form-input" placeholder=" " required/>
-                            <label for="email" class="form-label">Email Address</label>
+                        <div className="form-group">
+                            <input type="email" id="email" className="form-input" placeholder=" " required/>
+                            <label for="email" className="form-label">Email Address</label>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" id="subject" class="form-input" placeholder=" " required/>
-                            <label for="subject" class="form-label">Subject</label>
+                        <div className="form-group">
+                            <input type="text" id="subject" className="form-input" placeholder=" " required/>
+                            <label for="subject" className="form-label">Subject</label>
                         </div>
 
-                        <div class="form-group">
-                            <textarea id="message" class="form-input" placeholder=" " required></textarea>
-                            <label for="message" class="form-label">Your Message</label>
+                        <div className="form-group">
+                            <textarea id="message" className="form-input" placeholder=" " required></textarea>
+                            <label for="message" className="form-label">Your Message</label>
                         </div>
 
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                        <button type="submit" className="submit-btn">
+                            <i className="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
                 </div>

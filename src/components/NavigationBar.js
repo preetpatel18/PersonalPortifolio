@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { throttle } from '../utils/throttle';
 import "../App.css";
