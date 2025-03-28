@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import project from './Projects.png';
-import personalportifolio from './PersonalPortoflio.png';
+import personalportifolio from './PersonalPortifolio.png';
 import languages from './Languages.png';
 function App() {
   // State management
