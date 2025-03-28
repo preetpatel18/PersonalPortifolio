@@ -15,32 +15,23 @@ function ContactMe(){
 
                         <div class="contact-details">
                             <div class="detail-item">
-                                <div class="detail-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
                                 <div class="detail-text">
                                     <h3>Email Me</h3>
-                                    <a href="mailto:hello@example.com">hello@example.com</a>
+                                    <p>preetpatel1862@gmail.com</p>
                                 </div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
                                 <div class="detail-text">
-                                    <h3>Call Me</h3>
-                                    <p>+1 (555) 123-4567</p>
+                                    <h3>Discord Handle</h3>
+                                    <p>@mrxleaderz</p>
                                 </div>
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
                                 <div class="detail-text">
                                     <h3>Based In</h3>
-                                    <p>San Francisco, CA</p>
+                                    <p>NJ, USA</p>
                                 </div>
                             </div>
                         </div>
