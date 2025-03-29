@@ -1,6 +1,14 @@
 import Navigation from "../components/NavigationBar";
 import Footer from "../components/Footer";
+import emailjs from '@emailjs/browser';
+
 function ContactMe(){
+
+    const sendEmail = (e) =>{
+        e.preventDefault();
+        emailjs.sendForm('service_g958ei1', 'template_rds1vmi', e.target, "-OA_s5uFupOb1ejEa");
+    }
+
     return(
         <div>
             <Navigation />
@@ -37,24 +45,24 @@ function ContactMe(){
                         </div>
                     </div>
 
-                    <form className="contact-form" action="#" method="POST">
+                    <form className="contact-form" action="#" onSubmit={sendEmail} method="POST">
                         <div className="form-group">
-                            <input type="text" id="name" className="form-input" placeholder=" " required/>
+                            <input type="text" id="name" name = "name" className="form-input" placeholder=" " required/>
                             <label for="name" className="form-label">Your Name</label>
                         </div>
 
                         <div className="form-group">
-                            <input type="email" id="email" className="form-input" placeholder=" " required/>
+                            <input type="email" name="emailFrom" id="email" className="form-input" placeholder=" " required/>
                             <label for="email" className="form-label">Email Address</label>
                         </div>
 
                         <div className="form-group">
-                            <input type="text" id="subject" className="form-input" placeholder=" " required/>
+                            <input type="text" id="subject" name ="subject" className="form-input" placeholder=" " required/>
                             <label for="subject" className="form-label">Subject</label>
                         </div>
 
                         <div className="form-group">
-                            <textarea id="message" className="form-input" placeholder=" " required></textarea>
+                            <textarea id="message" name = "message" className="form-input" placeholder=" " required></textarea>
                             <label for="message" className="form-label">Your Message</label>
                         </div>
 

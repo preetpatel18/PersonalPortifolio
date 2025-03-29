@@ -1,4 +1,5 @@
 import Navigation from "../components/NavigationBar";
+
 import Footer from "../components/Footer";
 import project from '../Projects.png';
 import personalportifolio from '../PersonalPortifolio.png';
@@ -19,7 +20,7 @@ function Home(){
                         </p>
                         <img className="startup" src={personalportifolio} alt="Pic"></img>
                     </div>
-                    <p className="profile-description">Have an idea to work on? <button className="contact-btn">Contact Me</button></p>
+                    <p className="profile-description">Have an idea to work on? <a href="ContactMe" className="contact-btn">Contact Me</a></p>
                 </div>
           
                 <div className="content">
