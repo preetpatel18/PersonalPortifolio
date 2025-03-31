@@ -5,7 +5,7 @@ function NoPage(){
         <div>
             <Navigation />
             <main className="front">   
-                <p>Add more things</p>
+                <p>WRONG URL: Please Proceed back to the Home Page</p>
             </main>
         </div>
     )
