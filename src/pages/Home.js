@@ -3,7 +3,7 @@ import Navigation from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import project from '../Projects.png';
 import personalportifolio from '../PersonalPortifolio.png';
-import languages from '../Languages.png';
+// import languages from '../Languages.png';
 
 function Home(){
     return(
@@ -25,16 +25,18 @@ function Home(){
           
                 <div className="content">
                     <div className="box">
-                        <div className="image-container" aria-hidden="true">
-                            <img src={project} alt="Pic"></img>
-                        </div>
-                        <p className="btext rubik">
-                            PROJECTS
-                            <i className="bx bx-book"></i>
-                        </p>
+                        <a href="/Projects">
+                            <div className="image-container" aria-hidden="true">
+                                <img src={project} alt="Pic"></img>
+                            </div>
+                            <p className="btext rubik">
+                                PROJECTS
+                                <i className="bx bx-book"></i>
+                            </p>
+                        </a>
                     </div>
             
-                    <div className="box">
+                    {/* <div className="box">
                         <div className="image-container" aria-hidden="true">
                             <img src={languages} alt="Pic"></img>
                         </div>
@@ -42,7 +44,7 @@ function Home(){
                                 Languages
                                 <i className="bx bx-code"></i>
                             </p>
-                    </div>
+                    </div> */}
                 </div>
             </main>
             <Footer />
