@@ -3,10 +3,10 @@ import Footer from "../components/Footer";
 import emailjs from '@emailjs/browser';
 
 function ContactMe(){
-
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_g958ei1', 'template_rds1vmi', e.target, "-OA_s5uFupOb1ejEa");
+        e.target.reset();
     }
 
     return(
@@ -45,7 +45,7 @@ function ContactMe(){
                         </div>
                     </div>
 
-                    <form className="contact-form" action="#" onSubmit={sendEmail} method="POST">
+                    <form className="contact-form" id="myForm" action="#" onSubmit={sendEmail} method="POST">
                         <div className="form-group">
                             <input type="text" id="name" name = "name" className="form-input" placeholder=" " required/>
                             <label for="name" className="form-label">Your Name</label>
