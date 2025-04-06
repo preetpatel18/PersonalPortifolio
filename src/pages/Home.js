@@ -12,7 +12,7 @@ function Home(){
             <main className="front">   
                 <div className="profile-card">
                     <h1 className="profile-name">Hi, I'm Preet Patel</h1>
-                    <h2 className="profile-title">Triple Major in Computer Science, Data Science, Statistics/Mathematics and Minor in Business Administration @ Rutgers University</h2>
+                    <h2 className="profile-title">Triple Major in Computer Science, Data Science, Statistics/Mathematics @ Rutgers University</h2>
                     <div className="profile-filter">
                         <p className="profile-description">
                         As a multidisciplinary developer, I craft software that balances technical precision with human-centered design. My work lives at the intersection of robust systems and intuitive experiences – whether building data pipelines that tell compelling stories or applications that solve real user frustrations.
