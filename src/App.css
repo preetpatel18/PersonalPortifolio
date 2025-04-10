@@ -172,6 +172,10 @@ header {
   display: none;
 }
 
+.info img{
+  width: 150px;
+}
+
 /* Content Styles */
 .content {
   width: 100%;

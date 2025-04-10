@@ -84,10 +84,10 @@ export default function Navigation() {
             </ul>
           </div>
           <div className="logo" aria-hidden="true"></div>
-            <div className="info rubik">
-              <p>CoPrograming</p>
-              <p>Preet Patel</p>
-            </div>
+          <div className="info rubik">
+            <p>CoPrograming</p>
+            <p>Preet Patel</p>
+          </div>
           </div>
         </nav>
     </nav>
