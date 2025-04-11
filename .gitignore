@@ -10,6 +10,7 @@
 
 # production
 /build
+/pages/Certification.js
 
 # misc
 .DS_Store

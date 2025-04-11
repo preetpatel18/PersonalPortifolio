@@ -4,6 +4,8 @@ import About from "./pages/AboutMe"
 import Contact from "./pages/ContactMe"
 import Projects from "./pages/Projects"
 import NoPage from "./pages/NoPages"
+import Cert from "./pages/Certification";
+
 function app(){
   return(
     <div>
@@ -14,6 +16,7 @@ function app(){
           <Route path="/AboutMe"  element = {<About/>} />
           <Route path="/ContactMe"  element = {<Contact/>} />
           <Route path="/Projects"  element = {<Projects/>} />
+          <Route path="/Cert"  element = {<Cert/>} />
           <Route path="*"  element = {<NoPage/>} />
         </Routes>
       </BrowserRouter>

@@ -30,6 +30,23 @@ function Projects() {
 						<div class="timeline-item completed visible">
 							<div class="timeline-marker"></div>
 							<div class="timeline-card">
+								<div class="timeline-date">Spring 2025 - Data 101</div>
+								<h3 class="timeline-title">Data Anaylsis on US Tariffs</h3>
+								<p class="timeline-description">
+									A data-driven R project analyzing 34 years of U.S. trade to evaluate global tariff imbalances, with case studies on China and Canada.
+								</p>
+								<a
+									href="https://github.com/preetpatel18/A-Data-on-U.S.-Tariff-and-Trade-Fairness/tree/main"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<span class="timeline-status">Github</span>
+								</a>
+							</div>
+						</div>
+						<div class="timeline-item completed visible">
+							<div class="timeline-marker"></div>
+							<div class="timeline-card">
 								<div class="timeline-date">Spring 2025 - IEEE Hackathon</div>
 								<h3 class="timeline-title">SketchFlow</h3>
 								<p class="timeline-description">
