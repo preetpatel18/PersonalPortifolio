@@ -78,6 +78,7 @@ export default function Navigation() {
               <li><a href="Home">Home</a></li>
               <li><a href="AboutMe">About Me</a></li>
               <li><a href="ContactMe">Contact Me</a></li>
+              <li><a href="Cert">Skills</a></li>
               <li><a href="https://github.com/preetpatel18" target="_blank" rel="noreferrer">Github</a></li>
               <li><a href="https://www.linkedin.com/in/preetp1826/" target="_blank" rel="noreferrer">LinkedIn</a></li>
               <li><a href="https://leetcode.com/u/MrxNoobie/" target="_blank" rel="noreferrer"> LeetCode</a></li>

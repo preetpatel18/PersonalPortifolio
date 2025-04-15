@@ -42,12 +42,16 @@ a {
   --glass-bg: rgba(0, 0, 0, 0.455);
   --text-muted: rgba(255, 255, 255, 0.6);
   --accent: #ff6a6a;
+  --secondary: #f58a8a;
   --accent-glow: 0 0 15px rgba(255, 106, 106, 0.3);
   --border-radius: 12px;
 
   /* Projects Page */
   --completed: #00B894;
   --dark-card: #1E1E1E;
+
+  /* Certification Page */
+  --light: #f5f5f5;
 }
 
 header {
@@ -513,8 +517,6 @@ textarea.form-input {
 .header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .avatar {
@@ -942,6 +944,196 @@ textarea.form-input {
   color: var(--completed);
 }
 
+/* Certification Page */
+.header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, var(--accent), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header h1:hover {
+  text-shadow: 0 0 15px rgba(255, 17, 0, 0.3);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.tagline:hover {
+  color: var(--light);
+  transform: translateY(-3px);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 3rem 0 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.section-title:hover {
+  text-shadow: 0 0 15px rgba(255, 17, 0, 0.3);
+  transform: translateX(5px);
+}
+
+/* Improved Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: rgba(40, 30, 30, 0.5);;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.skill-category-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-category:hover .skill-category-title {
+  color: var(--accent);
+}
+
+.skill-category-icon {
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover .skill-category-icon {
+  transform: rotate(2deg) scale(1.2);
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item {
+  background: rgba(255, 0, 0, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+
+  background: var(--accent);
+  color: var(--dark-bg);
+  transform: scale(1.05);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(255, 17, 0, 0.3);
+}
+
+/* Certifications Grid */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cert-card {
+  background: rgba(40, 30, 30, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.cert-org {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-org {
+  letter-spacing: 1px;
+}
+
+.cert-name {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-name {
+  color: var(--secondary);
+}
+
+.cert-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-date {
+  color: var(--light);
+}
+
+.cert-id {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-id {
+  color: #ccc;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .timeline::before {
@@ -967,5 +1159,19 @@ textarea.form-input {
 
   .timeline-marker {
       left: 20px;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2.5rem;
+  }
+  
+  .skills-container {
+      grid-template-columns: 1fr;
+  }
+  
+  .certs-grid {
+      grid-template-columns: 1fr;
   }
 }
