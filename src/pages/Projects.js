@@ -15,6 +15,17 @@ function Projects() {
 					</div>
 
 					<div class="timeline">
+					<div class="timeline-item visible">
+							<div class="timeline-marker"></div>
+							<div class="timeline-card">
+								<div class="timeline-date">May 2025</div>
+								<h3 class="timeline-title">Docere AI</h3>
+								<p class="timeline-description">
+									An AI based Web app that turns your boring presentation into a fully visual learning experience.
+								</p>
+								<span class="timeline-status">In Progress</span>
+							</div>
+						</div>
 						<div class="timeline-item visible">
 							<div class="timeline-marker"></div>
 							<div class="timeline-card">
@@ -140,6 +151,27 @@ function Projects() {
 								<span class="timeline-status">
 									<a
 										href="https://github.com/preetpatel18/Data-Structures/"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Github
+									</a>
+								</span>
+							</div>
+						</div>
+												
+						<div class="timeline-item completed visible">
+							<div class="timeline-marker"></div>
+							<div class="timeline-card">
+								<div class="timeline-date">2024</div>
+								<h3 class="timeline-title">Stock Simulation</h3>
+								<p class="timeline-description">
+									An interactive and educational stock market app designed for teens and kids. Our platform makes learning to 
+									trade fun and safe, combining skill-building with engaging activities tailored for the younger generation
+								</p>
+								<span class="timeline-status">
+									<a
+										href="https://github.com/preetpatel18/Stock-Simulation"
 										target="_blank"
 										rel="noreferrer"
 									>
