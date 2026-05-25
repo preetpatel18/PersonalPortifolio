@@ -1,5 +1,6 @@
 import Navigation from "../components/NavigationBar";
 import Footer from "../components/Footer";
+import "../assets/certification.css";
 
 function Projects() {
 	return (
@@ -8,9 +9,33 @@ function Projects() {
 			<main className="front">
 			<div class="container">
 				<div className="header">
-					<h1>Preet Patel</h1>
-					<p class="tagline">Full Stack Developer | UI/UX Enthusiast | Lifelong Learner</p>
+					<h1>Certifications</h1>
+					<p class="tagline">"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt." ~ Technoblade, Art of War</p>
 				</div>
+				
+				<section id="certifications">
+					<h2 class="section-title">Certifications</h2>
+					<div class="certs-grid">
+						<div class="cert-card">
+							<p class="cert-org">Oracle</p>
+							<h3 class="cert-name">Java Certified Foundations Associate</h3>
+							<p class="cert-date">Issued: January 2023</p>
+						</div>
+						
+						<div class="cert-card">
+							<p class="cert-org">HackerRank</p>
+							<h3 class="cert-name">Java (Basic) Certificate</h3>
+							<p class="cert-date">Issued: December 2024</p>
+							<p class="cert-id">Credential ID: 162e51003060</p>
+						</div>
+						<div class="cert-card">
+							<p class="cert-org">HackerRank</p>
+							<h3 class="cert-name">Problem Solving (Basic) Certificate</h3>
+							<p class="cert-date">Issued: December 2024</p>
+							<p class="cert-id">Credential ID: 9fe300356be8</p>
+						</div>
+					</div>
+				</section>
 				
 				<section id="skills">
 					<h2 class="section-title">Technical Skills</h2>
@@ -55,30 +80,6 @@ function Projects() {
 							<div class="skill-items">
 								<span class="skill-item">Git</span>
 							</div>
-						</div>
-					</div>
-				</section>
-				
-				<section id="certifications">
-					<h2 class="section-title">Certifications</h2>
-					<div class="certs-grid">
-						<div class="cert-card">
-							<p class="cert-org">Oracle</p>
-							<h3 class="cert-name">Java Certified Foundations Associate</h3>
-							<p class="cert-date">Issued: January 2023</p>
-						</div>
-						
-						<div class="cert-card">
-							<p class="cert-org">HackerRank</p>
-							<h3 class="cert-name">Java (Basic) Certificate</h3>
-							<p class="cert-date">Issued: December 2024</p>
-							<p class="cert-id">Credential ID: 162e51003060</p>
-						</div>
-						<div class="cert-card">
-							<p class="cert-org">HackerRank</p>
-							<h3 class="cert-name">Problem Solving (Basic) Certificate</h3>
-							<p class="cert-date">Issued: December 2024</p>
-							<p class="cert-id">Credential ID: 9fe300356be8</p>
 						</div>
 					</div>
 				</section>

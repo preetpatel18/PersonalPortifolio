@@ -3,8 +3,7 @@ import Footer from "../components/Footer";
 import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaYoutube} from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 import personalportifolio from '../ProfilePict.png';
-import '../App.css';
-
+import '../assets/aboutme.css';
 
 function AboutMe(){
     return(
@@ -18,7 +17,7 @@ function AboutMe(){
                             className="avatar"/>
                         <div className="name-title">
                             <h1>Preet Patel</h1>
-                            <p>Software Engineer</p>
+                            <p>Student at Rutgers University - New Brunswick</p>
                         </div>
                     </div>
                     
@@ -26,21 +25,19 @@ function AboutMe(){
                         <div className="card">
                             <h2 className="card-title">BIO</h2>
                             <p className="bio">
-                                Building interfaces for the next decade. Focused on performant, accessible, and visually stunning web experiences.
+                                Hi, my name is Preet, I like to work in blah, blah, blah.... boring... I just enjoy hanging out with friends, playing videos games, and building softwares for the love of game.
                             </p>
                         </div>
                         
                         <div className="card">
-                            <h2 className="card-title">SKILLS</h2>
+                            <h2 className="card-title">RELEVENT COURSEWORK</h2>
                             <div className="skills">
-                                <span className="skill">React</span>
-                                <span className="skill">Java</span>
-                                <span className="skill">Python</span>
-                                <span className="skill">HTML</span>
-                                <span className="skill">Figma</span>
-                                <span className="skill">CSS</span>
-                                <span className="skill">JavaScript</span>
-                                <span className="skill">MySQL</span>
+                                <span className="skill">Data Structures</span>
+                                <span className="skill">Computer Architecture</span>
+                                <span className="skill">Calculus III, IV</span>
+                                <span className="skill">Linear Algebra</span>
+                                <span className="skill">Statistical Learning</span>
+                                <span className="skill">Discrete Mathematics</span>
                             </div>
                         </div>
                         

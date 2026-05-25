@@ -1,6 +1,8 @@
 import Navigation from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import emailjs from '@emailjs/browser';
+import "../assets/contactme.css";
+
 
 function ContactMe(){
     const sendEmail = (e) =>{

@@ -1,55 +1,83 @@
-import Navigation from "../components/NavigationBar";
+import { useNavigate } from "react-router-dom";
+import "../assets/home.css";
 
-import Footer from "../components/Footer";
-import project from '../Projects.png';
-import personalportifolio from '../PersonalPortifolio.png';
-// import languages from '../Languages.png';
+function Home() {
+  const navigate = useNavigate();
 
-function Home(){
-    return(
-        <div>
-            <Navigation />
-            <main className="front">   
-                <div className="profile-card">
-                    <h1 className="profile-name">Hi, I'm Preet Patel</h1>
-                    <h2 className="profile-title">Triple Major in Computer Science, Data Science, Statistics/Mathematics @ Rutgers University</h2>
-                    <div className="profile-filter">
-                        <p className="profile-description">
-                        As a multidisciplinary developer, I craft software that balances technical precision with human-centered design. My work lives at the intersection of robust systems and intuitive experiences – whether building data pipelines that tell compelling stories or applications that solve real user frustrations.
-                        What drives me? The moment when complex technology fades into the background, leaving only seamless utility. I thrive on transforming theoretical knowledge from my studies into practical tools that make a difference.
-                        </p>
-                        <img className="startup" src={personalportifolio} alt="Pic"></img>
-                    </div>
-                    <p className="profile-description">Have an idea to work on? <a href="ContactMe" className="contact-btn">Contact Me</a></p>
-                </div>
-          
-                <div className="content">
-                    <div className="box">
-                        <a href="/Projects">
-                            <div className="image-container" aria-hidden="true">
-                                <img src={project} alt="Pic"></img>
-                            </div>
-                            <p className="btext rubik">
-                                PROJECTS
-                                <i className="bx bx-book"></i>
-                            </p>
-                        </a>
-                    </div>
-            
-                    {/* <div className="box">
-                        <div className="image-container" aria-hidden="true">
-                            <img src={languages} alt="Pic"></img>
-                        </div>
-                            <p className="btext rubik">
-                                Languages
-                                <i className="bx bx-code"></i>
-                            </p>
-                    </div> */}
-                </div>
-            </main>
-            <Footer />
+  const cards = [
+    {
+      label: "Projects",
+      icon: "↗",
+      desc: "React apps, data pipelines, ML models & more.",
+      page: "/projects",
+    },
+    {
+      label: "Languages & Skills",
+      icon: "◈",
+      desc: "Python, TypeScript, R, SQL, and the full stack.",
+      page: "/cert",
+    },
+    {
+      label: "About Me",
+      icon: "✦",
+      desc: "Who I am, what drives me, and where I'm headed.",
+      page: "/about",
+    },
+  ];
+
+  return (
+    <div className="home page-enter">
+      {/* Hero */}
+      <section className="home-hero">
+        <div className="hero-content">
+          <div className="section-tag">
+            Computer Science · Data Science · Statistics · Mathematics
+          </div>
+
+          <h1 className="hero-title">
+            Hi, I&apos;m <span className="ink-banner">Preet Patel</span>
+          </h1>
+
+          <p className="hero-description">
+            Triple Major @ Rutgers University — Building my dream software,
+            Website Portfolios, Graphic Designs, and Data Science projects.
+          </p>
+
+          <div className="hero-buttons">
+            <span
+              className="pill-btn filled"
+              onClick={() => navigate("/projects")}
+            >
+              View Projects
+            </span>
+
+            <span className="pill-btn" onClick={() => navigate("/contact")}>
+              Contact Me
+            </span>
+          </div>
         </div>
-    )
+      </section>
+
+      {/* Cards */}
+      <section className="home-cards-section">
+        <div className="home-cards-grid">
+          {cards.map((card, i) => (
+            <div
+              key={i}
+              className="doodle-card home-card"
+              onClick={() => navigate(card.page)}
+            >
+              <div className="home-card-icon">{card.icon}</div>
+
+              <div className="home-card-title">{card.label}</div>
+
+              <div className="home-card-description">{card.desc}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default Home;
