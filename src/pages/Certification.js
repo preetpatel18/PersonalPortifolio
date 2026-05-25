@@ -6,79 +6,80 @@ function Projects() {
 	return (
 		<div>
 			<Navigation />
-			<main className="front">
-			<div class="container">
-				<div className="header">
-					<h1>Certifications</h1>
-					<p class="tagline">"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt." ~ Technoblade, Art of War</p>
+			<main className="page cert-page">
+			<div className="page-container">
+				<div className="page-header">
+					<p className="page-tag">Skills & Credentials</p>
+					<h1 className="page-title">Certifications</h1>
+					<p className="page-subtitle">"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt." ~ Technoblade, Art of War</p>
 				</div>
 				
-				<section id="certifications">
-					<h2 class="section-title">Certifications</h2>
-					<div class="certs-grid">
-						<div class="cert-card">
-							<p class="cert-org">Oracle</p>
-							<h3 class="cert-name">Java Certified Foundations Associate</h3>
-							<p class="cert-date">Issued: January 2023</p>
+				<section className="cert-section" id="certifications">
+					<h2 className="cert-section-title">Certifications</h2>
+					<div className="certs-grid">
+						<div className="cert-card">
+							<p className="cert-org">Oracle</p>
+							<h3 className="cert-name">Java Certified Foundations Associate</h3>
+							<p className="cert-date">Issued: January 2023</p>
 						</div>
 						
-						<div class="cert-card">
-							<p class="cert-org">HackerRank</p>
-							<h3 class="cert-name">Java (Basic) Certificate</h3>
-							<p class="cert-date">Issued: December 2024</p>
-							<p class="cert-id">Credential ID: 162e51003060</p>
+						<div className="cert-card">
+							<p className="cert-org">HackerRank</p>
+							<h3 className="cert-name">Java (Basic) Certificate</h3>
+							<p className="cert-date">Issued: December 2024</p>
+							<p className="cert-id">Credential ID: 162e51003060</p>
 						</div>
-						<div class="cert-card">
-							<p class="cert-org">HackerRank</p>
-							<h3 class="cert-name">Problem Solving (Basic) Certificate</h3>
-							<p class="cert-date">Issued: December 2024</p>
-							<p class="cert-id">Credential ID: 9fe300356be8</p>
+						<div className="cert-card">
+							<p className="cert-org">HackerRank</p>
+							<h3 className="cert-name">Problem Solving (Basic) Certificate</h3>
+							<p className="cert-date">Issued: December 2024</p>
+							<p className="cert-id">Credential ID: 9fe300356be8</p>
 						</div>
 					</div>
 				</section>
 				
-				<section id="skills">
-					<h2 class="section-title">Technical Skills</h2>
-					<div class="skills-container">
-						<div class="skill-category">
-							<h3 class="skill-category-title"><span class="skill-category-icon">💻</span> Frontend</h3>
-							<div class="skill-items">
-								<span class="skill-item">React</span>
-								<span class="skill-item">HTML5</span>
-								<span class="skill-item">CSS3</span>
-								<span class="skill-item">JavaScript</span>
-								<span class="skill-item">JSP</span>
+				<section className="cert-section" id="skills">
+					<h2 className="cert-section-title">Technical Skills</h2>
+					<div className="skills-container">
+						<div className="skill-category">
+							<h3 className="skill-category-title"><span className="skill-category-icon">💻</span> Frontend</h3>
+							<div className="skill-items">
+								<span className="skill-item">React</span>
+								<span className="skill-item">HTML5</span>
+								<span className="skill-item">CSS3</span>
+								<span className="skill-item">JavaScript</span>
+								<span className="skill-item">JSP</span>
 							</div>
 						</div>
 						
-						<div class="skill-category">
-							<h3 class="skill-category-title"><span class="skill-category-icon">🔌</span> Backend</h3>
-							<div class="skill-items">
-								<span class="skill-item">Node.js</span>
-								<span class="skill-item">APIs</span>
-								<span class="skill-item">MySQL</span>
-								<span class="skill-item">GraphQL</span>
-								<span class="skill-item">MongoDB</span>
-								<span class="skill-item">PostgreSQL</span>
-								<span class="skill-item">Java</span>
+						<div className="skill-category">
+							<h3 className="skill-category-title"><span className="skill-category-icon">🔌</span> Backend</h3>
+							<div className="skill-items">
+								<span className="skill-item">Node.js</span>
+								<span className="skill-item">APIs</span>
+								<span className="skill-item">MySQL</span>
+								<span className="skill-item">GraphQL</span>
+								<span className="skill-item">MongoDB</span>
+								<span className="skill-item">PostgreSQL</span>
+								<span className="skill-item">Java</span>
 							</div>
 						</div>
 						
-						<div class="skill-category">
-							<h3 class="skill-category-title"><span class="skill-category-icon">📊</span> Data</h3>
-							<div class="skill-items">
-								<span class="skill-item">Python</span>
-								<span class="skill-item">Pandas</span>
-								<span class="skill-item">NumPy</span>
-								<span class="skill-item">R</span>
-								<span class="skill-item">Data Visualization</span>
+						<div className="skill-category">
+							<h3 className="skill-category-title"><span className="skill-category-icon">📊</span> Data</h3>
+							<div className="skill-items">
+								<span className="skill-item">Python</span>
+								<span className="skill-item">Pandas</span>
+								<span className="skill-item">NumPy</span>
+								<span className="skill-item">R</span>
+								<span className="skill-item">Data Visualization</span>
 							</div>
 						</div>
 						
-						<div class="skill-category">
-							<h3 class="skill-category-title"><span class="skill-category-icon">☁️</span> DevOps</h3>
-							<div class="skill-items">
-								<span class="skill-item">Git</span>
+						<div className="skill-category">
+							<h3 className="skill-category-title"><span className="skill-category-icon">☁️</span> DevOps</h3>
+							<div className="skill-items">
+								<span className="skill-item">Git</span>
 							</div>
 						</div>
 					</div>

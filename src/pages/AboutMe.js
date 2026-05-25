@@ -2,16 +2,17 @@ import Navigation from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaYoutube} from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
-import personalportifolio from '../ProfilePict.png';
+import personalportifolio from '../images/ProfilePict.png';
 import '../assets/aboutme.css';
 
 function AboutMe(){
     return(
         <div>
             <Navigation />
-            <main className="front">   
-                <div className="terminal">
-                    <div className="header">
+            <main className="page about-page">   
+                <div className="page-container about-container">
+                    <div className="about-profile">
+                    <div className="about-header">
                         <img src={personalportifolio}
                             alt="Profile" 
                             className="avatar"/>
@@ -21,16 +22,16 @@ function AboutMe(){
                         </div>
                     </div>
                     
-                    <div className="content-grid">
-                        <div className="card">
-                            <h2 className="card-title">BIO</h2>
+                    <div className="about-grid">
+                        <div className="about-card">
+                            <h2 className="about-card-title">BIO</h2>
                             <p className="bio">
                                 Hi, my name is Preet, I like to work in blah, blah, blah.... boring... I just enjoy hanging out with friends, playing videos games, and building softwares for the love of game.
                             </p>
                         </div>
                         
-                        <div className="card">
-                            <h2 className="card-title">RELEVENT COURSEWORK</h2>
+                        <div className="about-card">
+                            <h2 className="about-card-title">RELEVENT COURSEWORK</h2>
                             <div className="skills">
                                 <span className="skill">Data Structures</span>
                                 <span className="skill">Computer Architecture</span>
@@ -41,8 +42,8 @@ function AboutMe(){
                             </div>
                         </div>
                         
-                        <div className="card">
-                            <h2 className="card-title">CONTACT</h2>
+                        <div className="about-card">
+                            <h2 className="about-card-title">CONTACT</h2>
                             <div className="contact-list">
                                 <div className="contact-item">
                                     <MdEmail/>
@@ -54,8 +55,8 @@ function AboutMe(){
                                 </div>
                             </div>
                         </div>
-                        <div className="card">
-                            <h2 className="card-title">CHECKOUT</h2>
+                        <div className="about-card">
+                            <h2 className="about-card-title">CHECKOUT</h2>
                             <div className="social-links">
                                 <a href="https://github.com/preetpatel18" target="_blank" rel="noreferrer" className="social-link"><FaGithub/></a>
                                 <a href="https://www.linkedin.com/in/preetp1826/" target="_blank" rel="noreferrer" className="social-link"><FaLinkedin/></a>
@@ -63,6 +64,7 @@ function AboutMe(){
                                 <a href="https://www.youtube.com/@CoProgramming" target="_blank" rel="noreferrer" className="social-link"><FaYoutube/></a>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </main>

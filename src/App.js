@@ -4,17 +4,16 @@ import About from "./pages/AboutMe"
 import Contact from "./pages/ContactMe"
 import Projects from "./pages/Projects"
 import Cert from "./pages/Certification";
-import Studio from "./pages/CreativeStudio";
-import Navbar from "./components/NavigationBar";
+// import Studio from "./pages/CreativeStudio";
 import Work from "./pages/work";
 import NoPage from "./pages/NoPages"
+import "./App.css";
 
 
 function App(){
   return(
-    <div>
+    <div className="app-shell">
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route index element = {<Home/>} />
           <Route path="/home"  element = {<Home/>} />
@@ -22,7 +21,7 @@ function App(){
           <Route path="/contact"  element = {<Contact/>} />
           <Route path="/projects"  element = {<Projects/>} />
           <Route path="/cert"  element = {<Cert/>} />
-          <Route path="/studio"  element = {<Studio/>} />
+          {/* <Route path="/studio"  element = {<Studio/>} /> */}
           <Route path="/work"  element = {<Work/>} />
           <Route path="*"  element = {<NoPage/>} />
         </Routes>

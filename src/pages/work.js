@@ -43,14 +43,15 @@ function WorkPage() {
   ];
 
   return (
-    <div className="work-page">
+    <div>
       <Navigation />
 
-      <main className="work-main">
-        <section className="work-header">
-          <p className="work-label">Selected Work</p>
-          <h1>Portfolio</h1>
-          <p>
+      <main className="page work-page">
+        <div className="page-container">
+        <section className="page-header work-header">
+          <p className="page-tag">Selected Work</p>
+          <h1 className="page-title">Portfolio</h1>
+          <p className="page-subtitle">
             A collection of websites, branding systems, social media graphics,
             and creative digital projects.
           </p>
@@ -80,6 +81,7 @@ function WorkPage() {
             </article>
           ))}
         </section>
+        </div>
       </main>
 
       <Footer />

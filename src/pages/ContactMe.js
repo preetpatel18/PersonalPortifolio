@@ -14,7 +14,8 @@ function ContactMe(){
     return(
         <div>
             <Navigation />
-            <main className="front">   
+            <main className="page contact-page">   
+              <div className="page-container contact-container">
                 <div className="contact-card">
                     <div className="contact-info">
                         <h1>Let's Connect</h1>
@@ -50,22 +51,22 @@ function ContactMe(){
                     <form className="contact-form" id="myForm" action="#" onSubmit={sendEmail} method="POST">
                         <div className="form-group">
                             <input type="text" id="name" name = "name" className="form-input" placeholder=" " required/>
-                            <label for="name" className="form-label">Your Name</label>
+                            <label htmlFor="name" className="form-label">Your Name</label>
                         </div>
 
                         <div className="form-group">
                             <input type="email" name="emailFrom" id="email" className="form-input" placeholder=" " required/>
-                            <label for="email" className="form-label">Email Address</label>
+                            <label htmlFor="email" className="form-label">Email Address</label>
                         </div>
 
                         <div className="form-group">
                             <input type="text" id="subject" name ="subject" className="form-input" placeholder=" " required/>
-                            <label for="subject" className="form-label">Subject</label>
+                            <label htmlFor="subject" className="form-label">Subject</label>
                         </div>
 
                         <div className="form-group">
                             <textarea id="message" name = "message" className="form-input" placeholder=" " required></textarea>
-                            <label for="message" className="form-label">Your Message</label>
+                            <label htmlFor="message" className="form-label">Your Message</label>
                         </div>
 
                         <button type="submit" className="submit-btn">
@@ -73,6 +74,7 @@ function ContactMe(){
                         </button>
                     </form>
                 </div>
+              </div>
             </main>
             <Footer />
         </div>

@@ -3,197 +3,178 @@ import Footer from "../components/Footer";
 import "../assets/projects.css";
 
 function Projects() {
+  const projects = [
+    {
+      date: "May 2025",
+      title: "Rhea AI",
+      description:
+        "An AI-based web app that turns boring presentations into a fully visual learning experience.",
+      status: "In Progress",
+      completed: false,
+      link: "",
+      website: "",
+    },
+    {
+      date: "February 2025",
+      title: "RU-LockedIn",
+      description:
+        "An application that generates personalized four-year course plans based on a student's major and academic requirements.",
+      status: "In Progress",
+      completed: false,
+      link: "",
+      website: "",
+    },
+    {
+      date: "Spring 2025 - Data 101",
+      title: "Data Analysis on US Tariffs",
+      description:
+        "A data-driven R project analyzing 34 years of U.S. trade to evaluate global tariff imbalances, with case studies on China and Canada.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/A-Data-on-U.S.-Tariff-and-Trade-Fairness/tree/main",
+      website: "",
+    },
+    {
+      date: "Spring 2025 - IEEE Hackathon",
+      title: "SketchFlow",
+      description:
+        "Using React and Node.js, we created a fully functional sketch-to-React application. Users can sketch on the website and receive a ZIP file of their generated React application.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/SketchFlow",
+      website: "",
+    },
+    {
+      date: "Spring 2025 - BITS Hackathon",
+      title: "Traffic Data Analysis",
+      description:
+        "Using R and Python, we created detailed graphical analysis of traffic accidents based on time, location, weather, and more.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/Datathon",
+      website: "",
+    },
+    {
+      date: "Spring 2025",
+      title: "Beacon",
+      description:
+        "Beacon is an AI-powered wildfire detection and monitoring system that integrates NASA's FIRMS for real-time fire data visualization and predictive analytics.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/Beacon",
+      website: "",
+    },
+    {
+      date: "Fall 2024",
+      title: "CureBytes",
+      description:
+        "Designed to aid medical schools in enhancing the student experience through innovative tools and resources.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/Health-HackRU-Hackathon",
+      website: "https://health-hack-ru-main.vercel.app/",
+    },
+    {
+      date: "Fall 2024",
+      title: "Data Structures",
+      description:
+        "A repository containing implementations of fundamental data structures and algorithms using Java for my Data Structures course.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/Data-Structures/",
+      website: "",
+    },
+    {
+      date: "2024",
+      title: "Stock Simulation",
+      description:
+        "An interactive and educational stock market app designed for teens and kids. The platform makes learning trading fun and safe through engaging activities.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/Stock-Simulation",
+      website: "",
+    },
+    {
+      date: "2022",
+      title: "Battleship",
+      description:
+        "An AI-powered Battleship game in Java where the computer strategically attacks based on probability rather than randomness.",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/preetpatel18/BattleShip-AI",
+      website: "",
+    },
+  ];
+
   return (
     <div>
       <Navigation />
 
-      <main className="projects-page">
-        <div className="roadmap-container">
-          <div className="roadmap-header">
-            <p className="section-tag">TIMELINE</p>
-            <h1 className="roadmap-title">Projects</h1>
-            <p className="roadmap-subtitle">
-              Key milestones, hackathon builds, class projects, and software development progress.
+      <main className="page projects-page">
+        <div className="page-container">
+          <div className="page-header">
+            <p className="page-tag">Portfolio Projects</p>
+
+            <h1 className="page-title">Projects</h1>
+
+            <p className="page-subtitle">
+              Key milestones, hackathon builds, class projects, and software
+              development progress.
             </p>
           </div>
 
-          <div className="timeline">
-            <div className="timeline-item visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">May 2025</div>
-                <h3 className="timeline-title">Rhea AI</h3>
-                <p className="timeline-description">
-                  An AI-based web app that turns boring presentations into a fully visual learning experience.
-                </p>
-                <span className="timeline-status in-progress">In Progress</span>
-              </div>
-            </div>
+          <section className="projects-grid" aria-label="Project list">
+            {projects.map((project, index) => (
+              <article
+                key={index}
+                className="clean-card project-card"
+              >
+                <div className="project-card-top">
+                  <span className="project-date">{project.date}</span>
 
-            <div className="timeline-item visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">February 2025</div>
-                <h3 className="timeline-title">RU-LockedIn</h3>
-                <p className="timeline-description">
-                  An application that generates personalized four-year course plans based on a student's major and academic requirements.
-                </p>
-                <span className="timeline-status in-progress">In Progress</span>
-              </div>
-            </div>
+                  <span
+                    className={`project-status ${
+                      project.completed ? "is-complete" : "is-progress"
+                    }`}
+                  >
+                    {project.completed ? "Completed" : project.status}
+                  </span>
+                </div>
 
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Spring 2025 - Data 101</div>
-                <h3 className="timeline-title">Data Analysis on US Tariffs</h3>
-                <p className="timeline-description">
-                  A data-driven R project analyzing 34 years of U.S. trade to evaluate global tariff imbalances, with case studies on China and Canada.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/A-Data-on-U.S.-Tariff-and-Trade-Fairness/tree/main"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
+                <h2 className="project-title">{project.title}</h2>
 
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Spring 2025 - IEEE Hackathon</div>
-                <h3 className="timeline-title">SketchFlow</h3>
-                <p className="timeline-description">
-                  Using React and Node.js, we created a fully functional sketch-to-React application.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/SketchFlow"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
+                <p className="project-description">{project.description}</p>
 
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Spring 2025 - BITS Hackathon</div>
-                <h3 className="timeline-title">Traffic Data Analysis</h3>
-                <p className="timeline-description">
-                  Using R and Python, we created graphical analysis of traffic accidents based on time, location, weather, and more.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/Datathon"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
+                <div className="project-actions">
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                    >
+                      {project.status}
+                    </a>
+                  ) : (
+                    <span className="project-link project-link-disabled">
+                      {project.status}
+                    </span>
+                  )}
 
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Spring 2025</div>
-                <h3 className="timeline-title">Beacon</h3>
-                <p className="timeline-description">
-                  Beacon is an AI-powered wildfire detection and monitoring system that integrates NASA's FIRMS for real-time fire data visualization and predictive analytics.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/Beacon"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Fall 2024</div>
-                <h3 className="timeline-title">CureBytes</h3>
-                <p className="timeline-description">
-                  Designed to aid medical schools in enhancing the student experience through innovative tools and resources.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/Health-HackRU-Hackathon"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">Fall 2024</div>
-                <h3 className="timeline-title">Data Structures</h3>
-                <p className="timeline-description">
-                  A repository containing implementations of fundamental data structures and algorithms using Java.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/Data-Structures/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">2024</div>
-                <h3 className="timeline-title">Stock Simulation</h3>
-                <p className="timeline-description">
-                  An interactive stock market app designed for teens and kids to make learning trading fun and safe.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/Stock-Simulation"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-
-            <div className="timeline-item completed visible">
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-date">2022</div>
-                <h3 className="timeline-title">Battleship</h3>
-                <p className="timeline-description">
-                  An AI-powered Battleship game in Java where the computer attacks strategically based on probability rather than randomness.
-                </p>
-                <a
-                  href="https://github.com/preetpatel18/BattleShip-AI"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="timeline-link"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link project-link-secondary"
+                    >
+                      Website
+                    </a>
+                  )}
+                </div>
+              </article>
+            ))}
+          </section>
         </div>
       </main>
 

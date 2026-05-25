@@ -3,20 +3,19 @@
    White / Black Portfolio Theme
 ========================= */
 
-.front {
-  width: 100%;
-  min-height: 100vh;
-  padding: 130px 48px 90px;
-  background: #fafafa;
-  color: #1a1a1a;
+.contact-page {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 /* =========================
    Contact Card Layout
 ========================= */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
 
 .contact-card {
   width: 100%;
@@ -26,7 +25,7 @@
   border-radius: 28px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   box-shadow: 0 24px 65px rgba(0, 0, 0, 0.06);
 }
 
@@ -35,6 +34,7 @@
 ========================= */
 
 .contact-info {
+  min-width: 0;
   padding: 56px;
   background: #1a1a1a;
   color: #fff;
@@ -46,10 +46,10 @@
   content: "CONTACT";
   position: absolute;
   bottom: -18px;
-  left: -8px;
+  left: 18px;
   font-size: 6rem;
   font-weight: 950;
-  letter-spacing: -0.08em;
+  letter-spacing: 0;
   color: rgba(255, 255, 255, 0.035);
   line-height: 1;
   pointer-events: none;
@@ -58,7 +58,7 @@
 .contact-info h1 {
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 950;
-  letter-spacing: -0.08em;
+  letter-spacing: 0;
   line-height: 0.9;
   color: #fff;
   margin: 0 0 24px;
@@ -117,6 +117,7 @@
 ========================= */
 
 .contact-form {
+  min-width: 0;
   padding: 56px;
   background: #fff;
 }
@@ -137,6 +138,7 @@
   font-weight: 600;
   padding: 22px 18px 10px;
   outline: none;
+  min-width: 0;
   transition: all 0.25s ease;
 }
 
@@ -214,8 +216,7 @@ textarea.form-input {
 ========================= */
 
 @media (max-width: 900px) {
-  .front {
-    padding: 115px 32px 75px;
+  .contact-page {
     align-items: flex-start;
   }
 
@@ -234,10 +235,6 @@ textarea.form-input {
 }
 
 @media (max-width: 600px) {
-  .front {
-    padding: 100px 20px 60px;
-  }
-
   .contact-card {
     border-radius: 24px;
   }
@@ -267,10 +264,6 @@ textarea.form-input {
 }
 
 @media (max-width: 420px) {
-  .front {
-    padding: 95px 16px 55px;
-  }
-
   .contact-info,
   .contact-form {
     padding: 24px;
