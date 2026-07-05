@@ -8,7 +8,7 @@ function Projects() {
       date: "Spring 2026",
       title: "TruthLens",
       description:
-        "AAn AI-powered browser extension that analyzes news articles and visualizes their credibility, helping users determine whether the content is human generated or AI-generated.",
+        "An AI-powered browser extension that analyzes news articles and visualizes their credibility, helping users determine whether the content is human generated or AI-generated.",
       status: "In Progress",
       completed: false,
       link: "",
