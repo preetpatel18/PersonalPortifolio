@@ -4,21 +4,21 @@ import "../assets/projects.css";
 
 function Projects() {
   const projects = [
-    {
-      date: "May 2025",
-      title: "Rhea AI",
+      {
+      date: "Spring 2026",
+      title: "TruthLens",
       description:
-        "An AI-based web app that turns boring presentations into a fully visual learning experience.",
+        "AAn AI-powered browser extension that analyzes news articles and visualizes their credibility, helping users determine whether the content is human generated or AI-generated.",
       status: "In Progress",
       completed: false,
       link: "",
       website: "",
     },
     {
-      date: "February 2025",
-      title: "RU-LockedIn",
+      date: "May 2025",
+      title: "Rhea AI",
       description:
-        "An application that generates personalized four-year course plans based on a student's major and academic requirements.",
+        "An AI-based web app that turns boring presentations into a fully visual learning experience.",
       status: "In Progress",
       completed: false,
       link: "",
