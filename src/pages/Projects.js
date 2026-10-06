@@ -9,19 +9,9 @@ function Projects() {
       title: "TruthLens",
       description:
         "An AI-powered browser extension that analyzes news articles and visualizes their credibility, helping users determine whether the content is human generated or AI-generated.",
-      status: "In Progress",
-      completed: false,
-      link: "",
-      website: "",
-    },
-    {
-      date: "May 2025",
-      title: "Rhea AI",
-      description:
-        "An AI-based web app that turns boring presentations into a fully visual learning experience.",
-      status: "In Progress",
-      completed: false,
-      link: "",
+      status: "Github",
+      completed: true,
+      link: "https://github.com/EricAzayev/CornellAIHackathon",
       website: "",
     },
     {
