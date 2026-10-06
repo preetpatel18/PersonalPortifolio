@@ -26,7 +26,7 @@ function AboutMe(){
                         <div className="about-card">
                             <h2 className="about-card-title">BIO</h2>
                             <p className="bio">
-                                Hi, my name is Preet, I like to work in blah, blah, blah.... boring... I just enjoy hanging out with friends, playing videos games, and building softwares for the love of game.
+                                Hi, my name is Preet Patel, I am currently a Junior at Rutgers University - New Brunswick, pursuing a degree in Computer Science. I am curently interning at GE Appliances for Software Engineering Internship.
                             </p>
                         </div>
                         
