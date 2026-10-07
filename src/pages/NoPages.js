@@ -1,9 +1,9 @@
-import Navigation from "../components/NavigationBar";
+// import Navigation from "../components/NavigationBar";
 
 function NoPage(){
     return(
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
             <main className="page">   
                 <div className="page-container page-header">
                     <p className="page-tag">404</p>

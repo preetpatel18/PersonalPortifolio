@@ -7,6 +7,7 @@ import Cert from "./pages/Certification";
 // import Studio from "./pages/CreativeStudio";
 import Work from "./pages/work";
 import NoPage from "./pages/NoPages"
+import BasicWinterPage from "./pages/BasicWinterPage";
 import "./App.css";
 
 
@@ -15,12 +16,12 @@ function App(){
     <div className="app-shell">
       <BrowserRouter>
         <Routes>
-          <Route index element = {<Home/>} />
-          <Route path="/home"  element = {<Home/>} />
+          <Route index element = {<BasicWinterPage/>} />
+          {/* <Route path="/home"  element = {<Home/>} />
           <Route path="/about"  element = {<About/>} />
           <Route path="/contact"  element = {<Contact/>} />
           <Route path="/projects"  element = {<Projects/>} />
-          <Route path="/cert"  element = {<Cert/>} />
+          <Route path="/cert"  element = {<Cert/>} /> */}
           {/* <Route path="/studio"  element = {<Studio/>} /> */}
           <Route path="/work"  element = {<Work/>} />
           <Route path="*"  element = {<NoPage/>} />
